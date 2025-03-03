@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Deportivo de Basketball CABALLEROS DE CULIACÁN</title>
+
+    <!-- Estilos de AOS (Animaciones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #fff;
+        background-image: url('https://boletomovil.s3.amazonaws.com/paths/caballeros-culiacan-sm.jpeg');
+        background-repeat: repeat-y;
+        background-position: left center, right center;
+        background-size: contain;
+    }
+
+    /* Header con animación */
+    header {
+        text-align: center;
+        color: #FFD700;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 4rem 2rem;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .header-content h1 {
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background: #4B002E;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Transiciones suaves en el menú */
+    nav a {
+        color: #FFD700;
+        text-decoration: none;
+        margin: 0 1.5rem;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: #2a2a2a;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+        color: #FFD700;
+        text-align: center;
+    }
+
+    /* Efecto de zoom en imágenes */
+    .image-container, .about-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container img,
+    .about-images img {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container img:hover,
+    .about-images img:hover {
+        transform: scale(1.1);
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text {
+        flex: 1;
+        padding-right: 2rem;
+        line-height: 1.8; /* Espaciado entre líneas */
+        font-size: 1.2rem; /* Tamaño de fuente más grande */
+    }
+
+    .about-text p {
+        margin-bottom: 1.5rem; /* Espacio entre párrafos */
+        color: #e0e0e0; /* Color de texto más suave para mejorar la legibilidad */
+    }
+
+    footer {
+        text-align: center;
+        background: linear-gradient(135deg, #800020, #4B002E);
+        color: #FFD700;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    ul li {
+        background: #FFD700;
+        color: #1a1a1a;
+        margin: 0.5rem 0;
+        padding: 0.8rem;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* Espacio entre líneas en "Horarios" */
+    #schedule p {
+        line-height: 3;
+    }
+
+    /* Estilos para la nueva sección de patrocinadores */
+    #sponsors {
+        background: #333;
+        padding: 3rem 2rem;
+        color: #FFD700;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+
+    .sponsor-logo {
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        background-color: #444;
+        border-radius: 10px;
+        margin: 0 1rem;
+        text-align: center;
+        line-height: 120px;
+        color: #FFD700;
+        font-size: 1.2rem;
+    }
+
+    .sponsor-logo img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>CLUB DEPORTIVO CABALLEROS DE CULIACÁN</h1>
+            <p><strong>UN LUGAR PARA APASIONADOS DEL BASKETBALL</strong></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Nosotros</a>
+        <a href="#teams">Equipos</a>
+        <a href="#academy">Academia</a>
+        <a href="#contact">Contacto</a>
+        <a href="#sponsors">Patrocinadores</a> <!-- Nuevo enlace para patrocinadores -->
+    </nav>
+
+    <div class="container" id="about" data-aos="fade-up">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>Somos un club deportivo dedicado a fomentar el basketball en nuestra comunidad, brindando un espacio inclusivo y dinámico para el desarrollo físico, técnico y mental de nuestros jugadores juveniles.</strong></p>
+                <p>Nos enfocamos en cultivar no solo habilidades deportivas, sino también valores como el trabajo en equipo, la disciplina y el respeto, que son esenciales tanto dentro como fuera de la cancha. Nuestro objetivo es crear un ambiente donde los jóvenes puedan crecer y superar sus propios límites, mientras disfrutan del deporte y se preparan para un futuro lleno de oportunidades.</p>
+                <p>Además, buscamos ser un referente de excelencia en el ámbito deportivo local, fomentando la sana competencia y el espíritu de camaradería.</p>
+            </div>
+            <div class="about-images">
+                <img src="https://cibacopa.org/wp-content/uploads/1998/11/reno-valle-286x300.jpg" alt="Jugadores en acción">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="teams" data-aos="fade-up">
+        <h2>Equipos</h2>
+        <ul>
+            <li>Infantil (6-12 años)</li>
+        </ul>
+        <div class="image-container">
+            <img src="equipo_infantil.jpeg" alt="Jugadores en acción Infantil">
+            <img src="equipo_infantil2.jpeg" alt="Entrenamiento Infantil">
+        </div>
+        <ul>
+            <li>Juvenil (13-17 años)</li>
+        </ul>
+        <div class="image-container">
+            <img src="equipo_juvenil.jpeg" alt="Equipo Juvenil">
+            <img src="equipo_juvenil_2.jpeg" alt="Entrenamiento Juvenil">
+        </div>
+    </div>
+
+    <div class="container" id="academy" data-aos="fade-up">
+        <h2>Academia y Horarios</h2>
+        <p>
+            <p><strong>Academia Juvenil de Basketball
+
+En el Club Deportivo Caballeros de Culiacán, nos enorgullece contar con una Academia Juvenil de Basketball diseñada para el desarrollo integral de nuestros jóvenes atletas. Nuestra academia está enfocada en cultivar habilidades deportivas, trabajo en equipo, disciplina y valores que van más allá de la cancha.
+Te invitamos a formar parte de nuestra academia y ser parte de una experiencia única en la que el deporte y los valores se encuentran para crear un futuro lleno de oportunidades para nuestros jóvenes talentos.</strong></p>
+            <strong>Categoria de 6-9 años:</strong> Lunes, Martes y Jueves - 4:00 PM a 5:00 PM<br>
+            <strong>Categoria de 10-13 años:</strong> Lunes de 5 a 6 PM, Miercoles y Viernes de 4:00 a 5:00 PM<br>
+            <strong>Categoria de 14-17 años (DESARROLLO):</strong> Martes, Miercoles, Jueves y Viernes de 5:00 a 6:00 PM<br>
+            <strong>Categoria de 14-17 años (AVANZADO):</strong> Lunes a Viernes - 5:00 PM a 7:00 PM<br>
+        </p>
+    </div>
+
+    <div class="container" id="contact" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p><strong>Email:</strong> mercadotecnia@caballerosdeculiacan.com</p>
+        <p><strong>Teléfono:</strong> +52 673 135 4574</p>
+        <p><strong>WhatsApp:</strong> +521 6672114807</p>
+    </div>
+
+    <!-- Sección de patrocinadores -->
+    <div class="container" id="sponsors" data-aos="fade-up">
+        <h2>Patrocinadores</h2>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador1.png" alt="Patrocinador 1">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador2.png" alt="Patrocinador 2">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador3.png" alt="Patrocinador 3">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador4.png" alt="Patrocinador 4">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador5.png" alt="Patrocinador 5">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador6.png" alt="Patrocinador 6">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador7.png" alt="Patrocinador 7">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador8.png" alt="Patrocinador 8">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador9.png" alt="Patrocinador 9">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador10.png" alt="Patrocinador 10">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador11.png" alt="Patrocinador 11">
+        </div>
+        <div class="sponsor-logo">
+            <img src="logo_patrocinador12.png" alt="Patrocinador 12">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Club Deportivo de Basketball. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts de AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+
+
+
